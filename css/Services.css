@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Quicksand:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --body_background_color: #eef2f5;
+    --primary_color: #09425a;
+    --Secondary_color: #36a693;
+    --primary_light: #2e6881;
+    --primary_dark: #022f42;
+    --priamry_shad1: #19546e;
+    --secondary_light: #59c1af;
+    --secondary_dark: #0a7c69;
+    --secondary_shad1: #8bdcce;
+    --card_background_color: rgba(242, 250, 255, 0.7);
+    --drop_shadow: 0 0 16px rgba(95 95 95 / 15%);
+}
+
+::selection {
+    color: white;
+    background-color: var(--Secondary_color);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+p {
+    font-family: 'Rubik', sans-serif;
+}
+
+html {
+    background-color: var(--body_background_color);
+}
+
+body {
+    background-color: var(--body_background_color);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* /////////////////////////////////////////////////// */
+
+.service_section {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 10rem;
+}
+
+.col {
+    flex: 0 1 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f1f8fc;
+    border-radius: 0.5rem;
+}
+.col3 {
+    flex: 0 1 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+}
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.service_img {
+    width: 62px;
+    height: 62px;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////// */
+
+.walkin_online_section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6.5rem;
+    align-items: center;
+}
+.walkin_img {
+    min-width: 200px;
+    max-width: 340px;
+}
+.ser_text {
+    text-align: center;
+}
+.walkin_text {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+/* ////////////////////////////////////////////////////// */
+
+.Homecare-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 6.5rem;
+}
+
+.homecare-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 70%;
+}
+
+.homecare-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    flex-basis: 45%;
+    background-color: rgba(242, 250, 255, 0.7);
+    border-radius: 0.5rem;
+}
+.homecare-packages {
+    margin-top: 3rem;
+}
+
+.pointer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.line {
+    width: 1rem;
+    height: 3px;
+    background: var(--primary_color);
+    border-radius: 1rem;
+    margin: 10px 0px;
+}
+
+/* //////////////////////////////////////////////////////// */
+
+.lab-section {
+    margin-top: 6.5rem;
+    display: flex;
+    justify-content: center;
+}
+.lab-text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 70%;
+    gap: 1rem;
+}
+.lab-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    /* flex: 1; */
+    flex: 0 1 100%;
+    padding: 2.5rem;
+    background-color: #f1f8fc;
+    border-radius: 0.5rem;
+}
+.rows {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.cols {
+    flex: 0 1 100%;
+}
+.lab-card-style {
+    width: max-content;
+    color: var(--primary_color);
+}
+
+@media (min-width: 320px) {
+    .container {
+        max-width: 360px;
+    }
+    .col {
+        flex-basis: 45%;
+    }
+    .cols {
+        flex-basis: 45%;
+    }
+    .colss {
+        flex-basis: 100%;
+    }
+    .col3 {
+        flex-basis: 45%;
+    }
+    .lab-text-section {
+        flex-basis: 98%;
+    }
+    .homecare-text {
+        width: 100%;
+    }
+    .walkin_text {
+        width: 100%;
+    }
+    .walkin_img {
+        min-width: 200px;
+        max-width: max-content;
+    }
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+    .col {
+        flex-basis: 45%;
+    }
+    .cols {
+        flex-basis: 30%;
+    }
+    .colss {
+        flex-basis: 48.3%;
+    }
+    .col3 {
+        flex-basis: 35%;
+    }
+    .lab-text-section {
+        flex-basis: 80%;
+    }
+    .homecare-text {
+        width: 80%;
+    }
+    .walkin_text {
+        width: 80%;
+    }
+    .walkin_img {
+        min-width: 200px;
+        max-width: 260px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    .col {
+        flex-basis: 45%;
+    }
+    .cols {
+        flex-basis: 22.3%;
+    }
+    .colss {
+        flex-basis: 48.3%;
+    }
+    .col3 {
+        flex-basis: 35%;
+    }
+    .lab-text-section {
+        flex-basis: 80%;
+    }
+    .homecare-text {
+        width: 80%;
+    }
+    .walkin_text {
+        width: 80%;
+    }
+    .walkin_img {
+        min-width: 200px;
+        max-width: 340px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 970px;
+    }
+    .col {
+        flex-basis: 31%;
+    }
+    .cols {
+        flex-basis: 14.3%;
+    }
+    .colss {
+        flex-basis: 15.3%;
+    }
+    .col3 {
+        flex-basis: 34%;
+    }
+    .lab-text-section {
+        flex-basis: 80%;
+    }
+    .homecare-text {
+        width: 80%;
+    }
+    .walkin_text {
+        width: 80%;
+    }
+    .walkin_img {
+        min-width: 200px;
+        max-width: 340px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+    .col {
+        flex-basis: 23.7%;
+    }
+    .cols {
+        flex-basis: 15.3%;
+    }
+    .colss {
+        flex-basis: 15.3%;
+    }
+    .col3 {
+        flex-basis: 21%;
+    }
+    .row {
+        gap: 0.8rem;
+    }
+    .walkin_img {
+        min-width: 200px;
+        max-width: 340px;
+    }
+}
